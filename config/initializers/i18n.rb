@@ -38,7 +38,8 @@ I18n::JS::FallbackLocales.prepend(OpenStreetMap::I18n::ValidateLocales)
 I18n::Backend::Simple.include(I18n::Backend::PluralizationFallback)
 I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
 
-I18n.fallbacks.map("no" => "nb")
+I18n.fallbacks[:no] = :nb
+I18n.fallbacks[:pnb] = :"pa-PK"
 
 I18n.enforce_available_locales = false
 
